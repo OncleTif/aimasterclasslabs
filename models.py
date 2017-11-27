@@ -9,5 +9,5 @@ class Net(nn.Module):
 
     def forward(self, x):
         x = self.fc0(x.view(x.size(0), -1))
-        
+
         return F.log_softmax(x)
